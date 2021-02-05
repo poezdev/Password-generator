@@ -2,6 +2,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const loader = require('sass-loader');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev; 
@@ -34,7 +35,9 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
     ],
+
     devtool: isProd ? false : 'source-map',
+
     module: {
         rules: [
             {
@@ -56,27 +59,8 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/i,
-                use: [
-                  { 
-                    loader: MiniCssExtractPlugin.loader,
-                  },
-                  {
-                    loader: 'style-loader',
-                  },
-                  {
-                    loader: 'css-loader',
-                  },
-                  {
-                    loader: 'resolve-url-loader',
-                  },
-                  {
-                    loader: 'sass-loader',
-                    options: {
-                      sourceMap: true,
-                    },
-                  },
-                ],
-              },
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+            },
         ]
     }
 }

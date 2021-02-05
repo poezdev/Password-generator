@@ -9,7 +9,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '/header.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _header_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header.scss */ "./components/header/header.scss");
 
 
 /***/ }),
@@ -22,6 +22,19 @@ Object(function webpackMissingModule() { var e = new Error("Cannot find module '
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_header_header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header/header.js */ "./components/header/header.js");
+// import './components/header/header.scss'
+
+
+/***/ }),
+
+/***/ "./components/header/header.scss":
+/*!***************************************!*\
+  !*** ./components/header/header.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
 
 
 /***/ })
