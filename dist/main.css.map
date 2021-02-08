@@ -1,1 +1,1 @@
-{"version":3,"sources":["webpack:///./components/header/header.scss"],"names":[],"mappings":"AAAA;EACI;AACJ,C","file":"main.css","sourcesContent":["p {\r\n    background: red;\r\n}"],"sourceRoot":""}
+{"version":3,"sources":["webpack:///./components/header/header.scss"],"names":[],"mappings":"AAIA;EACI;AAHJ,C","file":"main.css","sourcesContent":["\r\n\r\n\r\n\r\np {\r\n    background-color: violet;\r\n}"],"sourceRoot":""}

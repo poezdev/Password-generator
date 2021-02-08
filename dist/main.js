@@ -14,6 +14,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./components/layout/layout.js":
+/*!*************************************!*\
+  !*** ./components/layout/layout.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _layout_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layout.scss */ "./components/layout/layout.scss");
+
+
+/***/ }),
+
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
@@ -22,7 +34,9 @@ __webpack_require__.r(__webpack_exports__);
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_header_header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header/header.js */ "./components/header/header.js");
+/* harmony import */ var _components_layout_layout_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/layout/layout.js */ "./components/layout/layout.js");
 // import './components/header/header.scss'
+
 
 
 /***/ }),
@@ -30,6 +44,18 @@ __webpack_require__.r(__webpack_exports__);
 /***/ "./components/header/header.scss":
 /*!***************************************!*\
   !*** ./components/header/header.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./components/layout/layout.scss":
+/*!***************************************!*\
+  !*** ./components/layout/layout.scss ***!
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
