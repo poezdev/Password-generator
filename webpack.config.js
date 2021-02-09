@@ -46,11 +46,7 @@ module.exports = {
                 use: ['babel-loader']
             },
             {
-                test: /\.(?:ico|gif|png|jpeg|jpg)$/i,
-                type: 'asset/resource'
-            },
-            {
-                test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+                test: /\.(woff(2)?|otf|svg|)$/,
                 type: 'asset/inline'
             },
             {
@@ -59,12 +55,26 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
-            },
+                use: [
+                   {
+                     loader: MiniCssExtractPlugin.loader,
+                   },
+                   {
+                     loader: 'css-loader',
+                   },
+                   {
+                     loader: 'resolve-url-loader',
+                   },
+                   {
+                     loader: 'sass-loader'
+                   }
+                ]
+            }
         ]
     }
 }
 
  
-// Построить зависимости - 1) Импорт всех pug-компонентов в index.pug 2) Импорт всех sсss компонентов в js-
-// компоненты, а js-компоненты в index.js
+// 1) .pug to index.pug
+// 2) .sсss to similar .js
+// 3) .js to index.js
