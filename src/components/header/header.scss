@@ -1,6 +1,24 @@
-@import '../../fonts.scss';
+@import '../../scss/fonts.scss';
 
-p {
+.header {
+    background-color: green;
     font-family: Roboto, sans-serif;
-    background-color: violet;
+    text-align: center;
+    
+  &__menu {
+      background-color: violet;
+      display: inline-block;
+  }
 }
+
+li {
+    list-style-type: none; 
+    a {
+        text-decoration: none;
+      &:hover {
+          text-decoration: underline;
+      }
+    }
+}
+
+
