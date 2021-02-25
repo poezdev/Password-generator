@@ -75,7 +75,7 @@ module.exports = {
 }
 
  
-// 1) .pug to index.pug
-// 2) .sсss to similar .js
-// 3) .js to index.js
-// 4) layout.pug главный шаблон, в котором все соберется
+// 1) .sсss to similar .js
+// 2) .js to index.js
+// 3) layout.pug главный шаблон, в котором все соберется
+// 4) latout.pug to index.pug

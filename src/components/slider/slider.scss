@@ -1,1 +1,32 @@
 @import '../../scss/fonts.scss';
+
+.slidecontainer {
+  width: 100%;
+  font-weight: 300;
+}
+
+.slider {
+  -webkit-appearance: none;
+  margin: 14px;
+  width: 50%;
+  height: 8px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.6;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: rgb(151, 94, 94);
+  cursor: pointer;
+}
